@@ -1,0 +1,91 @@
+/*-- loader --*/
+.dc-loader-main.d-none {
+  display: none;
+}
+
+.dc-loader-main {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
+}
+
+.dc-loader-main .dc-loader-img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.over-y-hidden {
+  overflow: hidden;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+#ship-msg {
+  color: #000000 !important;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+#ship-msg.in-stock::before {
+  content: "";
+  margin-right: 5px !important;
+  background: url("https://www.tumbleliving.com/cdn/shop/files/correct.svg?v=1639032038")
+    no-repeat 50%;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-size: 100% auto;
+  position: relative;
+  top: 1px;
+  left: 1px;
+  border-radius: 50%;
+  background-color: #123539;
+}
+#ship-msg.ships::before {
+  content: "";
+  margin-right: 5px !important;
+  background: url("https://cdn.shopify.com/s/files/1/0273/8018/7189/files/noun-calendar.svg?v=1694762105")
+    no-repeat 50%;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: 100% auto;
+  position: relative;
+  top: 2px;
+}
+@media only screen and (max-width: 768px) {
+  #ship-msg {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}
+.free-ship-msg {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.product-single__add-to-cart {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+button.custom-btn-cartt.already-added-cart {
+  pointer-events: none !important;
+  background-color: #e6eaea !important;
+  border: 1px solid #e6eaea !important;
+}
