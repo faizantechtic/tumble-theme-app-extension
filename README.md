@@ -1,9 +1,9 @@
 # tumble-theme-app-extension
 
-<!-- Preview your theme app extension command-->
+1. Preview your theme app extension command
 
 "shopify app dev"
 
-<!-- Deploy and release the extension command-->
+2. Deploy and release the extension command
 
 "shopify app deploy"
